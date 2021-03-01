@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    /* grid-template-columns: repeat( 5, 20px);
+    grid-template-rows: repeat(5, 20px); */
+    /*Filas / Columnas*/
+    grid-template: repeat(5, 20px) / repeat(5, 20px);
+    /*Espacio entre row*/
+    /* row-gap: 5px; */
+    /* Filas / COlumna */
+    gap: 5px 5px;
+
+    /* Crear areas de grid */
+    grid-template-areas: 
+        "header     header header   header header"
+        "header     header header   header header"
+        "main       main   .        sidebar sidebar"
+        "main       main   .        sidebar sidebar"
+        "footer     footer footer   footer  footer "
+    ;
+}
