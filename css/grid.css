@@ -18,3 +18,40 @@
         "footer     footer footer   footer  footer "
     ;
 }
+
+.grid-container{
+    margin: auto;
+    border: 4px dotted turquoise;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.container-item{
+    background: papayawhip;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+.item{
+    background-color: papayawhip;
+    border: 4px solid hotpink;
+    margin: 10px;
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.tarjeta{
+    background-color: red;
+}
